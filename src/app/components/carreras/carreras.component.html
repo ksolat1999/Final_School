@@ -1,0 +1,97 @@
+<main id="main" class="main">
+    <div class="pagetitle">
+       <h1>Carreras</h1>
+       <nav>
+          <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+             <li class="breadcrumb-item">Tablas</li>
+             <li class="breadcrumb-item active">Data</li>
+          </ol>
+       </nav>
+    </div>
+    <section class="section">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="card">
+                <div class="card-body">
+                   <h5 class="card-title">Listado de Carreras <button (click)="clickAddCarrera()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-lg"></i>  Agregar</button></h5>
+                   <table class="table table-striped">
+                      <thead>
+                         <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Años</th>
+                            <th scope="col">Plan</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Pensum</th>
+                            <th scope="col">Acciones</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr *ngFor="let car of carreraData">
+                           <th scope="row">{{car.id}}</th>
+                           <td>{{car.nombre}}</td>
+                           <td>{{car.anos}}</td> 
+                           <td>{{car.plan}}</td> 
+                           <td>{{car.sede}}</td> 
+                           <td>{{car.pensum}}</td> 
+                           <td>
+                              <button (click)="onEdit(car)" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil"></i></button>&nbsp;
+                              <button (click)="deleteCarreras(car)" type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                           </td>
+                         </tr>
+                      </tbody>
+                   </table>
+                   
+                   
+                   <!-- Modal -->
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Carrera</h1>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           
+                           <form [formGroup]="formValue">
+                              <div class="mb-3">
+                                <label class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" formControlName="nombre">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Años:</label>
+                                <input type="number" class="form-control" formControlName="anos">
+                              </div>
+                              <div class="mb-3">
+                                 <label class="form-label">Plan:</label>
+                                 <input type="text" class="form-control" formControlName="plan">
+                              </div>
+                              <div class="mb-3">
+                                 <label class="form-label">Sede:</label>
+                                 <input type="text" class="form-control" formControlName="sede">
+                              </div>
+                              <div class="mb-3">
+                                 <label class="form-label">Pensum:</label>
+                                 <input type="text" class="form-control" formControlName="pensum">
+                              </div>
+                           </form>
+
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" *ngIf="showAdd" (click)="postCarreraDetails()" class="btn btn-success"><i class="bi bi-save"></i>  Añadir</button>
+                           <button type="button" *ngIf="showUpdate" (click)="updateCarreraDetails()" class="btn btn-warning"><i class="bi bi-save"></i>  Actualizar</button>
+                           <button type="button" id="cancel" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i>  Cancelar</button>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>
+
+ 
