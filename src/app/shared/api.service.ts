@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
-  //cambios para git
+  
   // Alumnos
   postAlumno(data:any){
     return this.http.post<any>("http://localhost:3000/alumnos", data).pipe(map((res:any)=>{
