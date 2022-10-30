@@ -1,0 +1,133 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "kevin solares",
+      "email": "kevinsolares@gmail.com"
+    }
+  ],
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Kevin Solares",
+      "edad": 23,
+      "correo": "kevinsolares@gmail.com",
+      "carrera": "Ingeniería en Sistemas",
+      "cursos": "2, 3, 5"
+    },
+    {
+      "id": 2,
+      "nombre": "Joel Beltetón",
+      "edad": 25,
+      "correo": "joelbelte@gmail.com",
+      "carrera": "Licenciatura en Diseño Gráfico",
+      "cursos": "1, 2, 3"
+    },
+    {
+      "id": 3,
+      "nombre": "Alex Pérez",
+      "edad": 55,
+      "correo": "alexlo@gmail.com",
+      "carrera": "Licenciatura en Química Biológica",
+      "cursos": "1, 3, 5"
+    },
+    {
+      "id": 4,
+      "nombre": "Sebastian Pérez",
+      "edad": 25,
+      "correo": "serbaspe@gmail.com",
+      "carrera": "Ingeniería Industrial",
+      "cursos": "2, 3, 4"
+    }
+  ],
+  "carreras": [
+    {
+      "id": 1,
+      "nombre": "Ingeniería en Sistemas",
+      "anos": 5,
+      "plan": "Diario vespertino, Fin de semana",
+      "sede": "Campus Central, Sede Portales",
+      "pensum": "Cerrado"
+    },
+    {
+      "id": 2,
+      "nombre": "Licenciatura en Diseño Gráfico",
+      "anos": 4,
+      "plan": "Diario vespertino",
+      "sede": "Campus Central",
+      "pensum": "Abierto"
+    },
+    {
+      "id": 3,
+      "nombre": "Licenciatura en Química Biológica",
+      "anos": 4,
+      "plan": "Diario vespertino, Fin de semana",
+      "sede": "Campus Central, Sede Petén",
+      "pensum": "Cerrado"
+    },
+    {
+      "id": 4,
+      "nombre": "Ingeniería Industrial",
+      "anos": 5,
+      "plan": "Diario vespertino, Fin de semana",
+      "sede": "Campus Central, Sede Chinautla",
+      "pensum": "Abierto"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nombre": "Investigación de Operaciones",
+      "horario": "12:00 - 14:00",
+      "seccion": "D",
+      "carrera": "Ingeniería en Sistemas"
+    },
+    {
+      "id": 2,
+      "nombre": "Diseño II",
+      "horario": "10:00 - 12:00",
+      "seccion": "A",
+      "carrera": "Licenciatura en Diseño Gráfico"
+    },
+    {
+      "id": 3,
+      "nombre": "Biología Celular",
+      "horario": "07:00 - 09:00",
+      "seccion": "C",
+      "carrera": "Licenciatura en Química Biológica"
+    },
+    {
+      "id": 4,
+      "nombre": "Algebra Lineal",
+      "horario": "16:00 - 14:00",
+      "seccion": "B",
+      "carrera": "Ingeniería Industrial"
+    }
+  ],
+  "maestros": [
+    {
+      "id": 1,
+      "nombre": "Esteban Pérez",
+      "correo": "estebanpe@uni.com",
+      "carrera": "Ingeniería Industrial"
+    },
+    {
+      "id": 2,
+      "nombre": "Lesly Palacios",
+      "correo": "leslypalac@uni.com",
+      "carrera": "Licenciatura en Diseño Gráfico"
+    },
+    {
+      "id": 3,
+      "nombre": "Karina Aguirre",
+      "correo": "karinaagui@uni.com",
+      "carrera": "Licenciatura en Química Biológica"
+    },
+    {
+      "id": 4,
+      "nombre": "Carlos Vargas",
+      "correo": "carlosvar@uni.com",
+      "carrera": "Ingeniería en Sistemas"
+    }
+  ]
+}
